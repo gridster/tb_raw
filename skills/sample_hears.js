@@ -3,7 +3,7 @@ module.exports = function(controller) {
 
   controller.hears('test','message_received', function(bot, message) {
 
-    bot.reply(message,'I heard a test');
+    bot.reply(message,'Test bestanden!');
 
   });
 
@@ -16,7 +16,7 @@ module.exports = function(controller) {
 
       bot.reply(message,{
         text: 'This message specified a 5000ms typing delay',
-        typingDelay: 5000,
+        typingDelay: 4000,
       });
 
     });

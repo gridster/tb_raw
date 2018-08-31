@@ -4,6 +4,9 @@
   bottom: -400px;
   right: 2rem;
   height: 434px;
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(92,92,92,0.45);
+  -moz-box-shadow: 3px 3px 14px 0px rgba(92,92,92,0.45);
+  box-shadow: 3px 3px 14px 0px rgba(92,92,92,0.45);
   transition: 0.5s ease-in-out bottom; }
   #embedded_messenger.active {
     bottom: 0; }
@@ -12,7 +15,12 @@
     width: 100%;
     border: 0; }
   #embedded_messenger #message_header {
-    background: #000;
+    background: #FE083B;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    border: 1px outset #5c5c5c;
     padding: 0.5rem 1rem;
     color: #FFF; }
 

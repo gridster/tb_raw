@@ -12,12 +12,12 @@ module.exports = function(controller) {
           convo.gotoThread(event.thread);
         }
       } else {
-        bot.reply(event, 'I was unable to load a script from Botkit Studio called `' + event.script +'`');
+        bot.reply(event, 'Da ist etwas ins Leere gelaufen:`' + event.script +'`');
       }
     }).catch(function(err) {
 
       console.log('Error triggering script: ', err);
-      bot.reply(event, 'I was unable to load a script from Botkit Studio called `' + event.script +'`');
+      bot.reply(event, 'Ein Problem ist aufgetreten: `' + event.script +'`');
 
     })
 
