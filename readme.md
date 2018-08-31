@@ -1,3 +1,15 @@
+# Teriell Base Bot
+
+Foundation is the Botkit Anywhere package.
+Ambition is a German version and a raw foundation for further application.
+
+The current version uses:
+ -  Mongo-DB
+ - BotKit Studio for default scripting
+ - Glitch (for hot edits) and testing
+ - LUIS model for the basics
+ - CSS (not scss!) hacks for style adaptions and direct use
+
 # Botkit Anywhere
 
 Embed a bot in any web page or app with Botkit for the Web.
