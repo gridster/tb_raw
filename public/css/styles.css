@@ -8,7 +8,7 @@ html {
   padding: 0;
   font-size: 18px;
   background-color: #FFF;
-  font-family: 'helvetica', sans-serif; }
+  font-family: 'PT Sans', sans-serif; }
 
 .wrapper {
   position: relative;
@@ -110,9 +110,9 @@ a.button {
   /*margin: 2rem auto;*/
   display: flex;
   flex-direction: column;
-  font-family: 'helvetica', sans-serif; }
+  font-family: 'PT Sans', sans-serif; }
   #message_window .disconnected {
-    background: #FFFFCC;
+    background: #FFE1BB;
     padding: 0.25rem; }
   #message_window.connected .disconnected {
     display: none; }
@@ -129,8 +129,8 @@ a.button {
     flex-shrink: 0;
     text-align: center;
     border-bottom: 1px solid #CCC;
-    font-size: 14px;
-    padding: 0.25rem;
+    font-size: 12px;
+    padding: 0.15rem;
     color: #666; }
     #message_window .powered_by a {
       text-decoration: none;
@@ -151,16 +151,18 @@ a.button {
     padding: 0.25rem; }
     #message_window footer input[type="text"] {
       flex-grow: 1;
-      font-size: 1.25rem;
+      font-size: 1.05rem;
       outline: none;
       border: none; }
     #message_window footer button {
       width: 50px;
-      background: none;
+      border-radius: 3px;
+      background: #000;
       border: 0;
       cursor: pointer;
-      color: blue;
-      font-weight: bold; }
+      color: #fff;
+      font-weight: bold;
+      margin-right: 10px}
   #message_window form {
     display: flex;
     margin: 0;
@@ -169,13 +171,13 @@ a.button {
     display: none; }
   #message_window .message {
     font-size: 14px;
-    padding: 0.5rem;
-    background: #F0F0F0;
+    padding: 0.7rem;
+    background: #f7e9e9;
     color: #333;
     border-radius: 5px;
     width: auto;
-    display: inline-block;
-    max-width: 75%; }
+    /*display: inline-block;*/
+    max-width: 70%; }
   #message_window .file_attachment {
     background: #F0F0F0;
     color: #333;
@@ -204,7 +206,7 @@ a.button {
     margin-bottom: 0; }
   #message_window .message.outgoing {
     float: right;
-    background: #a795ef;
+    background: #666633;
     color: white; }
   #message_window #message_replies {
     text-align: center;
@@ -223,14 +225,24 @@ a.button {
     #message_window #message_replies a {
       text-decoration: none;
       display: block;
-      border: 1px solid #a795ef;
-      color: #a795ef;
-      border-radius: 16px;
+      border: 1px solid #328BA9;
+      -webkit-box-shadow: 8px 8px 10px -10px rgba(0,0,0,0.28);
+      -moz-box-shadow: 8px 8px 10px -10px rgba(0,0,0,0.28);
+      box-shadow: 8px 8px 10px -10px rgba(0,0,0,0.28);
+      color: #42707F;
+      border-radius: 12px;
       padding: 0.25rem 1rem;
       font-size: 14px;
       cursor: pointer; }
       #message_window #message_replies a:hover {
-        background: #a795ef;
+        background: rgba(142,175,190,1);
+        background: -moz-linear-gradient(top, rgba(142,175,190,1) 0%, rgba(71,127,144,1) 50%, rgba(70,126,145,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(142,175,190,1)), color-stop(50%, rgba(71,127,144,1)), color-stop(100%, rgba(70,126,145,1)));
+        background: -webkit-linear-gradient(top, rgba(142,175,190,1) 0%, rgba(71,127,144,1) 50%, rgba(70,126,145,1) 100%);
+        background: -o-linear-gradient(top, rgba(142,175,190,1) 0%, rgba(71,127,144,1) 50%, rgba(70,126,145,1) 100%);
+        background: -ms-linear-gradient(top, rgba(142,175,190,1) 0%, rgba(71,127,144,1) 50%, rgba(70,126,145,1) 100%);
+        background: linear-gradient(to bottom, rgba(142,175,190,1) 0%, rgba(71,127,144,1) 50%, rgba(70,126,145,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eafbe', endColorstr='#467e91', GradientType=0 );
         color: #FFF; }
 
 /* typing indicator CSS based on code by Joseph Fusco -> https://codepen.io/fusco/pen/XbpaYv */
